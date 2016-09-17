@@ -22,5 +22,8 @@ mkdir ~/sbot-data
 
 #### 4. Run the container
 ```sh
-docker run --name sbot -d -v ~/sbot-data/:/root/.ssb/ -e HOST="<hostname.yourdomain.tld>" -p 8008:8008 --restart always scuttlebot
+docker run --name sbot \
+   -d -v ~/sbot-data/:/root/.ssb/ 
+   -e HOST="<hostname.yourdomain.tld>" 
+   -p 8008:8008 --restart always scuttlebot
 ```

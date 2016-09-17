@@ -1,6 +1,8 @@
 FROM node:5.12
 
-RUN npm install -g scuttlebot
+MAINTAINER Filipe Farinha <filipe@ktorn.com>
+
+RUN npm install -g scuttlebot@8.6.1
 
 ADD scripts/run-sbot.sh /run-sbot.sh
 RUN chmod +x /run-sbot.sh
