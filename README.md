@@ -49,6 +49,5 @@ mkdir ~/sbot-data
 ```sh
 docker run --name sbot \
    -d -v ~/sbot-data/:/root/.ssb/ \
-   -e HOST="<hostname.yourdomain.tld>" \
    -p 8008:8008 --restart always scuttlebot
 ```
