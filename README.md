@@ -1,5 +1,5 @@
 # docker-scuttlebot
-Run a scuttlebot server in a Docker container
+Run an ssb-server (scuttlebot server) in a Docker container
 
 To run a Pub you need to have a static public IP, ideally with a DNS record (i.e.`<hostname.yourdomain.tld>`)
 
@@ -48,7 +48,7 @@ mkdir ~/sbot-data
 #### 2. Run the container
 ```sh
 docker run --name sbot \
-   -d -v ~/sbot-data/:/root/.ssb/ 
-   -e HOST="<hostname.yourdomain.tld>" 
+   -d -v ~/sbot-data/:/root/.ssb/ \
+   -e HOST="<hostname.yourdomain.tld>" \
    -p 8008:8008 --restart always scuttlebot
 ```
