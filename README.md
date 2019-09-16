@@ -49,5 +49,5 @@ mkdir ~/sbot-data
 ```sh
 docker run --name sbot \
    -d -v ~/sbot-data/:/root/.ssb/ \
-   -p 8008:8008 --restart always scuttlebot
+   -p 8008:8008 --restart always ktorn/docker-scuttlebot
 ```
